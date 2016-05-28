@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Namespaces - GenUtils</title>
+    <title>List - GenUtils</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="halcwb"/>
@@ -33,73 +33,71 @@
         <div class="span9" id="main">
           
 
-<h1>GenUtils</h1>
 
 
-  <h2>Informedica.GenUtils.Lib Namespace</h2>
-    <div>
-      <table class="table table-bordered module-list">
-    <thead>
-      <tr><td>Module</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="module-name">
-            <a href="informedica-genutils-lib-bigrational.html">BigRational</a>
-          </td>
-          <td class="xmldoc"><p>Helper functions for <a href="informedica-genutils-lib-bigrational.html" title="BigRational"><code>BigRational</code></a></p>
-
-</td>
-        </tr>
-        <tr>
-          <td class="module-name">
-            <a href="informedica-genutils-lib-list.html">List</a>
-          </td>
-          <td class="xmldoc"><p>Additional utitilty functions
+<h1>List</h1>
+<p>
+  <span>Namespace: Informedica.GenUtils.Lib</span><br />
+</p>
+<div class="xmldoc">
+<p>Additional utitilty functions
 for lists</p>
 
-</td>
-        </tr>
-        <tr>
-          <td class="module-name">
-            <a href="informedica-genutils-lib-nullcheck.html">NullCheck</a>
-          </td>
-          <td class="xmldoc"><p>Function to perform a safe null check</p>
+</div>
 
-</td>
-        </tr>
-        <tr>
-          <td class="module-name">
-            <a href="informedica-genutils-lib-option.html">Option</a>
-          </td>
-          <td class="xmldoc"><p>Additional functions for the
-fsharp option type</p>
+<!-- Render nested types and modules, if there are any -->
 
-</td>
-        </tr>
-    </tbody>
-  </table>
-
-    </div>
-  <h2>Informedica.GenUtils.Lib.BCL Namespace</h2>
-    <div>
-      <table class="table table-bordered module-list">
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Module</td><td>Description</td></tr>
+      <tr><td>Function or value</td><td>Description</td></tr>
     </thead>
     <tbody>
-        <tr>
-          <td class="module-name">
-            <a href="informedica-genutils-lib-bcl-string.html">String</a>
-          </td>
-          <td class="xmldoc"><p>Helper functions for <code>System.String</code></p>
+      <tr>
+        <td class="member-name">
 
-</td>
-        </tr>
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
+            distinct xs
+          </code>
+          <div class="tip" id="23">
+            <strong>Signature:</strong> xs:&#39;?6720 list -&gt; &#39;?6720 list<br />
+                          <strong>Type parameters:</strong> '?6720          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUtils/tree/master/src/Informedica.GenUtils.Lib/List.fs#L19-19" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Calling distinct on a list <strong>xs</strong></p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
+            replace pred x xs
+          </code>
+          <div class="tip" id="24">
+            <strong>Signature:</strong> pred:(&#39;?6718 -&gt; bool) -&gt; x:&#39;?6718 -&gt; xs:&#39;?6718 list -&gt; &#39;?6718 list<br />
+                          <strong>Type parameters:</strong> '?6718          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/halcwb/GenUtils/tree/master/src/Informedica.GenUtils.Lib/List.fs#L11-11" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Replace an element <strong>x</strong> in a list <strong>xs</strong>
+when the <strong>pred</strong> function returns <code>true</code>. </br>
+Note: will only repolace the <em>first</em> element
+that satisfies the condition in <strong>pred</strong></p>
+
+
+        </td>
+      </tr>
     </tbody>
   </table>
-
-    </div>
 
         </div>
         <div class="span3">
