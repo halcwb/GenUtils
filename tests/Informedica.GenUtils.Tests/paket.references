@@ -1,6 +1,9 @@
-MathNet.Numerics.FSharp
+Expecto
+Expecto.FsCheck
+FSharp.Core
+dotnet-mono
+Microsoft.NET.Test.Sdk
+YoloDev.Expecto.TestSdk
+altcover
+Microsoft.NETFramework.ReferenceAssemblies
 
-group Testing
-	Unquote
-	Expecto
-	Expecto.FsCheck

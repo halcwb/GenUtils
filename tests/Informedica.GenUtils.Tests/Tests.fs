@@ -1,4 +1,6 @@
-﻿module Tests
+namespace Informedica.GenUtils.Tests
+
+module Tests =
 
     open Expecto
 
