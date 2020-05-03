@@ -1,6 +1,6 @@
 # GenUtils
 
-[Enter useful description for GenUtils]
+General utilities library.
 
 ---
 
@@ -8,8 +8,8 @@
 
 macOS/Linux | Windows
 --- | ---
-[![Travis Badge](https://travis-ci.org/MyGithubUsername/GenUtils.svg?branch=master)](https://travis-ci.org/MyGithubUsername/GenUtils) | [![Build status](https://ci.appveyor.com/api/projects/status/github/MyGithubUsername/GenUtils?svg=true)](https://ci.appveyor.com/project/MyGithubUsername/GenUtils)
-[![Build History](https://buildstats.info/travisci/chart/MyGithubUsername/GenUtils)](https://travis-ci.org/MyGithubUsername/GenUtils/builds) | [![Build History](https://buildstats.info/appveyor/chart/MyGithubUsername/GenUtils)](https://ci.appveyor.com/project/MyGithubUsername/GenUtils)  
+[![Travis Badge](https://travis-ci.org/halcwb/GenUtils.svg?branch=master)](https://travis-ci.org/halcwb/GenUtils) | [![Build status](https://ci.appveyor.com/api/projects/status/github/halcwb/GenUtils?svg=true)](https://ci.appveyor.com/project/halcwb/GenUtils)
+[![Build History](https://buildstats.info/travisci/chart/halcwb/GenUtils)](https://travis-ci.org/halcwb/GenUtils/builds) | [![Build History](https://buildstats.info/appveyor/chart/halcwb/GenUtils)](https://ci.appveyor.com/project/halcwb/GenUtils)  
 
 ## NuGet 
 
