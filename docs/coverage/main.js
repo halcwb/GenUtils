@@ -241,6 +241,7 @@ var assemblies = [
       { "name": "Informedica.GenUtils.Lib.Path", "rp": "Informedica.GenUtils.Lib_Path.htm", "cl": 0, "ucl": 1, "cal": 1, "tl": 8, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Informedica.GenUtils.Lib.Reflection", "rp": "Informedica.GenUtils.Lib_Reflection.htm", "cl": 5, "ucl": 0, "cal": 5, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 2, "tb": 2, "lch": [], "bch": [], "hc": [] },
       { "name": "Informedica.GenUtils.Lib.Seq", "rp": "Informedica.GenUtils.Lib_Seq.htm", "cl": 0, "ucl": 16, "cal": 16, "tl": 32, "ct": "LineCoverage", "mc": "-", "cb": 2, "tb": 10, "lch": [], "bch": [], "hc": [] },
+      { "name": "System.AssemblyVersionInformation", "rp": "Informedica.GenUtils.Lib_AssemblyVersionInformation.htm", "cl": 0, "ucl": 0, "cal": 0, "tl": 0, "ct": "MethodCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 

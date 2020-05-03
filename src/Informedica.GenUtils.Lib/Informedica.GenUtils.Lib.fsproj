@@ -1,33 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net472</TargetFrameworks>
-  </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="BCL\" />
-    <Folder Include="Scripts\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="paket.template" />
-    <None Include="paket.references" />
-    <Compile Include="Continuation.fs" />
-    <Compile Include="Memoization.fs" />
-    <Compile Include="Reflection.fs" />
-    <Compile Include="NullCheck.fs" />
-    <Compile Include="BCL\Char.fs" />
-    <Compile Include="BCL\String.fs" />
-    <Compile Include="BCL\Int32.fs" />
-    <Compile Include="BCL\Double.fs" />
-    <Compile Include="BCL\BigRational.fs" />
-    <Compile Include="BCL\DateTime.fs" />
-    <Compile Include="Option.fs" />
-    <Compile Include="Array.fs" />
-    <Compile Include="List.fs" />
-    <Compile Include="Seq.fs" />
-    <Compile Include="Path.fs" />
-    <Compile Include="File.fs" />
-    <Compile Include="App.fs" />
-    <None Include="Scripts\Script.fsx" />
-  </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1;net472</TargetFrameworks>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Title>GenUtils</Title>
+        <Description>Utilities library</Description>
+
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <Optimize>true</Optimize>
+        <Tailcalls>true</Tailcalls>
+
+    </PropertyGroup>
+    <ItemGroup>
+        <Folder Include="BCL\" />
+        <Folder Include="Scripts\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="AssemblyInfo.fs" />
+        <Compile Include="Continuation.fs" />
+        <Compile Include="Memoization.fs" />
+        <Compile Include="Reflection.fs" />
+        <Compile Include="NullCheck.fs" />
+        <Compile Include="BCL\Char.fs" />
+        <Compile Include="BCL\String.fs" />
+        <Compile Include="BCL\Int32.fs" />
+        <Compile Include="BCL\Double.fs" />
+        <Compile Include="BCL\BigRational.fs" />
+        <Compile Include="BCL\DateTime.fs" />
+        <Compile Include="Option.fs" />
+        <Compile Include="Array.fs" />
+        <Compile Include="List.fs" />
+        <Compile Include="Seq.fs" />
+        <Compile Include="Path.fs" />
+        <Compile Include="File.fs" />
+        <Compile Include="App.fs" />
+        <None Include="Scripts\Script.fsx" />
+    </ItemGroup>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

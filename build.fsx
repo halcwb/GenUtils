@@ -42,7 +42,7 @@ let environVarAsBoolOrDefault varName defaultValue =
 // Metadata and Configuration
 //-----------------------------------------------------------------------------
 
-let productName = "Informedica.GenUtils.Lib"
+let productName = "GenUtils"
 let sln = "GenUtils.sln"
 
 
@@ -55,7 +55,7 @@ let testsCodeGlob =
     ++ (__SOURCE_DIRECTORY__  @@ "tests/**/*.fsx")
 
 let srcGlob =__SOURCE_DIRECTORY__  @@ "src/**/*.??proj"
-let testsGlob = __SOURCE_DIRECTORY__  @@ "tests/**/**.??proj"
+let testsGlob = __SOURCE_DIRECTORY__  @@ "tests/**/*.??proj"
 
 let srcAndTest =
     !! srcGlob
@@ -64,7 +64,7 @@ let srcAndTest =
 let distDir = __SOURCE_DIRECTORY__  @@ "dist"
 let distGlob = distDir @@ "*.nupkg"
 
-let coverageThresholdPercent = 0
+let coverageThresholdPercent = 10 // temp setting to low 
 let coverageReportDir =  __SOURCE_DIRECTORY__  @@ "docs" @@ "coverage"
 
 
@@ -72,7 +72,7 @@ let docsDir = __SOURCE_DIRECTORY__  @@ "docs"
 let docsSrcDir = __SOURCE_DIRECTORY__  @@ "docsSrc"
 let docsToolDir = __SOURCE_DIRECTORY__ @@ "docsTool"
 
-let gitOwner = "halcwb"
+let gitOwner = "MyGithubUsername"
 let gitRepoName = "GenUtils"
 
 let gitHubRepoUrl = sprintf "https://github.com/%s/%s" gitOwner gitRepoName
@@ -424,7 +424,7 @@ let dotnetTest ctx =
         |> Seq.map IO.Path.GetFileNameWithoutExtension
         |> Seq.append ["FSharp.Core"]
         |> String.concat "|"
-        
+    
     let args =
         [
             "--no-build"
@@ -444,7 +444,7 @@ let dotnetTest ctx =
 
 let generateCoverageReport _ =
     let coverageReports =
-        !!"tests/**/coverage*.xml"
+        !!"tests/**/coverage.*.xml"
         |> String.concat ";"
     let sourceDirs =
         !! srcGlob
@@ -701,7 +701,7 @@ Target.create "ReleaseDocs" releaseDocs
 
 "DotnetRestore"
     ==> "DotnetBuild"
-    ==> "FSharpAnalyzers"
+//    ==> "FSharpAnalyzers"
     ==> "DotnetTest"
     =?> ("GenerateCoverageReport", not disableCodeCoverage)
     ==> "DotnetPack"

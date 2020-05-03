@@ -1,4 +1,4 @@
-﻿// Learn more about F# at http://fsharp.org
+// Learn more about F# at http://fsharp.org
 
 
 open System
@@ -535,7 +535,7 @@ module WebServer =
     let openBrowser url =
         let waitForExit (proc : Process) =
             proc.WaitForExit()
-            if proc.ExitCode <> 0 then failwithf "opening browser failed"
+            if proc.ExitCode <> 0 then printfn "opening browser failed"
         try
             let psi = ProcessStartInfo(FileName = url, UseShellExecute = true)
             Process.Start psi
